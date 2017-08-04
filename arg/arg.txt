@@ -1,0 +1,3 @@
+--variable user_name:user_name  
+--variable password:pass_word  
+--outputdir ..\\out

@@ -1,0 +1,1 @@
+call pybot.bat --argumentfile C:\\robot\arg\\arg.txt C:\\robot\\suites\\test.txt  

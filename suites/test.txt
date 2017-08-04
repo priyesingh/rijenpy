@@ -1,0 +1,27 @@
+*** Settings ***
+Library           Selenium2Library
+
+*** Test Cases ***
+test
+    Given URL is Opened
+    When user Enter Credentials
+    When When Click on Login Button
+    Click on Drop Down
+
+*** Keywords ***
+Given URL is opened
+    open browser    https://www.prezi.com/login/    chrome
+
+When user enter credentials
+    input text    id=id_username    priye.singh@capgemini.com
+    input password    id=id_password    Abcd8884312012
+
+When Click on Login Button
+    Click Button    id=btn_login
+
+Click on Drop Down
+    Mouse Over    id=dropdown-account
+    Focus    id=dropdown-account
+    Click Element    id=dropdown-account
+    Focus    xpath = //a[contains(text(),'Log out')]
+    Click Element    xpath = //a[contains(text(),'Log out')]

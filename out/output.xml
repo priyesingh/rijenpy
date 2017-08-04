@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170804 13:41:33.375" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\robot\suites\test.txt" id="s1" name="Test">
+<test id="s1-t1" name="test">
+<kw name="Given URL is opened">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://www.prezi.com/login/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170804 13:41:33.618" level="INFO">Opening browser 'chrome' to base url 'https://www.prezi.com/login/'</msg>
+<status status="PASS" endtime="20170804 13:41:45.968" starttime="20170804 13:41:33.618"></status>
+</kw>
+<status status="PASS" endtime="20170804 13:41:45.968" starttime="20170804 13:41:33.618"></status>
+</kw>
+<kw name="When user enter credentials">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=id_username</arg>
+<arg>priye.singh@capgemini.com</arg>
+</arguments>
+<msg timestamp="20170804 13:41:45.969" level="INFO">Typing text 'priye.singh@capgemini.com' into text field 'id=id_username'</msg>
+<status status="PASS" endtime="20170804 13:41:46.169" starttime="20170804 13:41:45.969"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=id_password</arg>
+<arg>Abcd8884312012</arg>
+</arguments>
+<msg timestamp="20170804 13:41:46.169" level="INFO">Typing password into text field 'id=id_password'</msg>
+<status status="PASS" endtime="20170804 13:41:46.318" starttime="20170804 13:41:46.169"></status>
+</kw>
+<status status="PASS" endtime="20170804 13:41:46.318" starttime="20170804 13:41:45.968"></status>
+</kw>
+<kw name="When When Click on Login Button">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=btn_login</arg>
+</arguments>
+<msg timestamp="20170804 13:41:46.319" level="INFO">Clicking button 'id=btn_login'.</msg>
+<status status="PASS" endtime="20170804 13:41:56.377" starttime="20170804 13:41:46.319"></status>
+</kw>
+<status status="PASS" endtime="20170804 13:41:56.377" starttime="20170804 13:41:46.319"></status>
+</kw>
+<kw name="Click on Drop Down">
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>id=dropdown-account</arg>
+</arguments>
+<msg timestamp="20170804 13:41:56.378" level="INFO">Simulating Mouse Over on element 'id=dropdown-account'</msg>
+<status status="PASS" endtime="20170804 13:41:56.417" starttime="20170804 13:41:56.378"></status>
+</kw>
+<kw name="Focus" library="Selenium2Library">
+<doc>Sets focus to element identified by `locator`.</doc>
+<arguments>
+<arg>id=dropdown-account</arg>
+</arguments>
+<status status="PASS" endtime="20170804 13:41:56.431" starttime="20170804 13:41:56.418"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>id=dropdown-account</arg>
+</arguments>
+<msg timestamp="20170804 13:41:56.432" level="INFO">Clicking element 'id=dropdown-account'.</msg>
+<status status="PASS" endtime="20170804 13:41:56.496" starttime="20170804 13:41:56.432"></status>
+</kw>
+<kw name="Focus" library="Selenium2Library">
+<doc>Sets focus to element identified by `locator`.</doc>
+<arguments>
+<arg>xpath = //a[contains(text(),'Log out')]</arg>
+</arguments>
+<status status="PASS" endtime="20170804 13:41:56.536" starttime="20170804 13:41:56.496"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath = //a[contains(text(),'Log out')]</arg>
+</arguments>
+<msg timestamp="20170804 13:41:56.536" level="INFO">Clicking element 'xpath = //a[contains(text(),'Log out')]'.</msg>
+<status status="PASS" endtime="20170804 13:41:56.601" starttime="20170804 13:41:56.536"></status>
+</kw>
+<status status="PASS" endtime="20170804 13:41:56.602" starttime="20170804 13:41:56.377"></status>
+</kw>
+<status status="PASS" endtime="20170804 13:41:56.602" critical="yes" starttime="20170804 13:41:33.603"></status>
+</test>
+<status status="PASS" endtime="20170804 13:41:56.602" starttime="20170804 13:41:33.375"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test" pass="1">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
